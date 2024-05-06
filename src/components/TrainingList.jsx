@@ -77,7 +77,7 @@ export default function TrainingList() {
         try {
             const response = await fetch(url, { method: 'DELETE' });
             if (!response.ok) throw new Error('Failed to delete training');
-            fetchTrainingList(); // Refresh the list after deleting
+            fetchTrainingList();
         } catch (err) {
             console.error("Error deleting training:", err);
         }
