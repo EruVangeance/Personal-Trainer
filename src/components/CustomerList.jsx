@@ -31,6 +31,7 @@ export default function CustomerList() {
         {
             headerName: 'Actions',
             field: 'actions',
+            maxWidth: 250,
             cellRenderer: params => (
                 <>
                     <Button 
